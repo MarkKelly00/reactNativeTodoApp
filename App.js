@@ -1,10 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { StyleSheet, View, FlatList, Alert, TouchableWithoutFeedback, Keyboard } from "react-native";
+import { StyleSheet, View, FlatList, TouchableWithoutFeedback, Keyboard } from "react-native";
 import Header from "./components/header/header";
 import TodoItem from "./components/todoItem/todoItem";
 import AddTodo from './components/addTodo/addTodo';
-import Sandbox from './components/sandbox/sandbox';
 
 export default function App() {
   const [todos, setTodos] = useState([
@@ -30,7 +29,6 @@ export default function App() {
   }
 
   return (
-    // <Sandbox />
     <TouchableWithoutFeedback onPress={() => {
       Keyboard.dismiss();
     }}>
